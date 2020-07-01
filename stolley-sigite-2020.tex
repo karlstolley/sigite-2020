@@ -1,0 +1,82 @@
+\documentclass[sigconf,anonymous]{acmart}
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\setcopyright{acmcopyright}
+\copyrightyear{2020}
+\acmYear{2020}
+%%\acmDOI{10.1145/1122445.1122456}
+
+\acmConference[SIGITE '20]{SIGITE '20}{October 7--9, 2020}{Omaha, NE, USA}
+\acmBooktitle{SIGITE '20: October 7--9, 2020, Omaha, NE, USA}
+%%\acmPrice{15.00}
+%%\acmISBN{978-1-4503-XXXX-X/18/06}
+%%\acmSubmissionID{123-A56-BU3}
+
+
+\begin{document}
+\title{Enhancing CSS Instruction with Objective Typography}
+
+\author{Karl Stolley}
+\email{kstolley@iit.edu}
+\orcid{1234-5678-9012}
+\affiliation{%
+  \institution{Illinois Institute of Technology}
+  \streetaddress{Institution Street Address}
+  \city{Chicago}
+  \state{IL}
+  \country{USA}
+  \postcode{60616}}
+	
+\begin{abstract}
+	Classroom instruction in Cascading Style Sheets (CSS) can be made more rigorous and systematic when anchored by established, rule-governed typesetting principles from the International Typographic Style. This poster, which is prepared as an interactive website in the spirit of this year’s online conference, outlines an instructional approach to CSS that invites students to apply a core set of typographic principles to a manageable, human-scaled subset of CSS properties. In this approach, students learn to bridge an abstract but reasoned design principle directly with its formal, computational declaration as a carefully composed collection of CSS properties.
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10003456.10003457.10003527.10003531.10003535</concept_id>
+<concept_desc>Social and professional topics~Information technology education</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10003456.10003457.10003527.10003528</concept_id>
+<concept_desc>Social and professional topics~Computational thinking</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Social and professional topics~Information technology education}
+\ccsdesc[300]{Social and professional topics~Computational thinking}
+
+\keywords{Cascading Style Sheets, typography, web design, curriculum}
+
+
+\maketitle
+
+\section{Problem}
+HTML and JavaScript are governed by instructionally convenient structural formalisms that are missing from CSS. For example, HTML demands a sensible source order and is only valid if it includes certain structures, such as the HTML DOCTYPE. JavaScript, as a scripting language without the forgiving error-recovery of HTML, establishes its own strict internal order and rules.
+
+By contrast, CSS is a comparative free-for-all: problems of inheritance and selector specificity aside, a stylesheet may contain any number of selectors and style declarations, presented in any order. Malformed, redundant, or inapplicable lines of CSS are simply ignored and effectively discarded by web browsers, whose internal stylesheets further complicate effective instruction.
+
+\section{Solutions}
+Classroom instruction in CSS can reflect the language's inherent disorder \cite{pw:learning}, and in the worst cases devolves into an unstructured sight-seeing tour of CSS properties and their effects: “This is how to make text pink,” “This is how to set a background color,” “This is how to remove an underline.” But the sight-seeing approach and its variants—walk-throughs of related groups of CSS properties, source-level inspections of stylesheets on existing pages—showcase the design features that CSS can control at the expense of what students need: a CSS development approach as reasoned, methodical, and rule-governed as development in HTML and JavaScript.
+
+With so few rules of its own, CSS instruction can be enhanced by adopting external rules and constraints. These need not be aesthetic. The focus of this approach is on setting text and interface elements according to an “objective and functional typography” \cite{mb:grid}.
+
+Previewing work in a browser's responsive design view set to a narrow, mobile scale puts students' focus on establishing a vertical rhythm for a selection of HTML text on just a single axis. Students learn to experiment with readable text sizes and leading, initially using just two CSS properties (\verb|font-size| and \verb|line-height|). 
+
+That work establishes two important values for setting type on the rest of the page: the base font size, which can be resized to predictable values according to the traditional typographers scale or a modular scale \cite{brown:modular}, and the line height, which can presented in multiples or fractions of the base value for a consistent, mathematically precise setting. Students learn to convert those values from absolute units (pixels, points) to accessible relative units (em, rem).
+
+\section{Conclusion}
+With its emphasis on a small set of interdependent properties applied to a ruleset of the International Typographic Style's objective typography, this instructional approach prepares students to be more effective in composing page layout using the complex properties found in the CSS specification's newer modules, especially CSS Flexible Boxes and CSS Grid.
+
+This approach has been refined in the classroom over a four-year period, but the development of an instrument, such as an interactive game \cite{kim:understanding}, to measure the effectiveness of this approach is needed.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{stolley.bib}
+
+\end{document}
