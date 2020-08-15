@@ -1,20 +1,10 @@
-\documentclass[sigconf,anonymous]{acmart}
+\documentclass[sigconf]{acmart}
 
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
     \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
 
-\setcopyright{acmcopyright}
-\copyrightyear{2020}
-\acmYear{2020}
-%%\acmDOI{10.1145/1122445.1122456}
-
-\acmConference[SIGITE '20]{SIGITE '20}{October 7--9, 2020}{Omaha, NE, USA}
-\acmBooktitle{SIGITE '20: October 7--9, 2020, Omaha, NE, USA}
-%%\acmPrice{15.00}
-%%\acmISBN{978-1-4503-XXXX-X/18/06}
-%%\acmSubmissionID{123-A56-BU3}
-
+\setcopyright{rightsretained}
 
 \begin{document}
 \title{Enhancing CSS Instruction with Objective Typography}
@@ -29,7 +19,14 @@
   \state{IL}
   \country{USA}
   \postcode{60616}}
-	
+
+\copyrightyear{2020}
+\acmYear{2020}
+\acmConference[SIGITE '20]{The 21st Annual Conference on Information Technology Education}{October 7--9, 2020}{Virtual Event, USA}
+\acmBooktitle{The 21st Annual Conference on Information Technology Education (SIGITE '20), October 7--9, 2020, Virtual Event, USA}
+\acmDOI{10.1145/3368308.3415439}
+\acmISBN{978-1-4503-7045-5/20/10}
+
 \begin{abstract}
 	Classroom instruction in Cascading Style Sheets (CSS) can be made more rigorous and systematic when anchored by established, rule-governed typesetting principles from the International Typographic Style. This poster, which is prepared as an interactive website in the spirit of this year’s online conference, outlines an instructional approach to CSS that invites students to apply a core set of typographic principles to a manageable, human-scaled subset of CSS properties. In this approach, students learn to bridge an abstract but reasoned design principle directly with its formal, computational declaration as a carefully composed collection of CSS properties.
 \end{abstract}
@@ -67,7 +64,7 @@ Classroom instruction in CSS can reflect the language's inherent disorder \cite{
 
 With so few rules of its own, CSS instruction can be enhanced by adopting external rules and constraints. These need not be aesthetic. The focus of this approach is on setting text and interface elements according to an “objective and functional typography” \cite{mb:grid}.
 
-Previewing work in a browser's responsive design view set to a narrow, mobile scale puts students' focus on establishing a vertical rhythm for a selection of HTML text on just a single axis. Students learn to experiment with readable text sizes and leading, initially using just two CSS properties (\verb|font-size| and \verb|line-height|). 
+Previewing work in a browser's responsive design view set to a narrow, mobile scale puts students' focus on establishing a vertical rhythm for a selection of HTML text on just a single axis. Students learn to experiment with readable text sizes and leading, initially using just two CSS properties (\verb|font-size| and \verb|line-height|).
 
 That work establishes two important values for setting type on the rest of the page: the base font size, which can be resized to predictable values according to the traditional typographers scale or a modular scale \cite{brown:modular}, and the line height, which can presented in multiples or fractions of the base value for a consistent, mathematically precise setting. Students learn to convert those values from absolute units (pixels, points) to accessible relative units (em, rem).
 
