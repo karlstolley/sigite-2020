@@ -9,7 +9,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 :root {
-  --background-color: #999;
+  --base-color: #c13b0f;
 }
 /* Base */
 html {
@@ -39,8 +39,9 @@ ol:not([class]) {
 ul:not([class]) {
   list-style-type: square;
 }
-a {
+a,a:active,a:visited {
   text-decoration: none;
+  color: var(--base-color);
 }
 /* Responsive Images */
 img {
@@ -63,13 +64,14 @@ img {
 #header,
 #main-finding,
 #footer {
-  background: var(--background-color);
+  background: var(--base-color);
 }
 section {
   padding-bottom: 24px;
 }
 #supporting li {
   padding-bottom: 12px;
+  color: var(--base-color);
 }
 #author ul {
   list-style-type: none;
@@ -91,14 +93,16 @@ section {
   font-size: 40.5px;
   line-height: 48px;
   padding: 12px 0 72px 0;
+  color: rgba(255,255,255,.9);
 }
 .finding em {
   font-weight: 700;
+  color: rgba(255,255,255,.95);
 }
 .qr-code img {
   margin-left: auto;
   height: 192px;
-  filter: opacity(30%);
+  filter: opacity(65%);
 }
 .qr-code p {
   font-size: 12px;
@@ -117,7 +121,7 @@ section {
   text-align: center;
 }
 #footer h2 a {
-  color: #555;
+  color: #333;
 }
 .logo img {
   max-width: 250px;
