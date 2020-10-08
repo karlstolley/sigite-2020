@@ -84,7 +84,7 @@ section {
 .finding {
   font-size: 40.5px;
   line-height: 48px;
-  padding: 48px 0;
+  padding: 12px 0 72px 0;
 }
 .finding em {
   font-weight: 700;
@@ -164,10 +164,18 @@ section {
   #supporting {
     grid-column: 4 / 6;
   }
+  #main-finding {
+    display: flex;
+    flex-flow: column nowrap;
+  }
   .finding {
+    align-self: flex-start;
     font-size: 60.75px;
     line-height: 66px;
-    padding: 144px 0;
+  }
+  .qr-code {
+    align-self: flex-end;
+    margin-top: auto;
   }
 }
 
@@ -195,6 +203,9 @@ section {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-gap: 24px;
+  }
+  .finding {
+    padding-top: 126px;
   }
 }
 
