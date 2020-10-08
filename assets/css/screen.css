@@ -124,6 +124,20 @@ section {
   margin: 0 auto;
 }
 
+#source-example {
+  max-width: 100%;
+  overflow: scroll;
+  height: 276px;
+  height: 168px;
+  position: relative;
+  margin-bottom: 12px;
+}
+#source-example img {
+  max-width: none;
+  height: 100%;
+  position: absolute;
+}
+
 /* State */
 .presenter-details {
   display: none;
