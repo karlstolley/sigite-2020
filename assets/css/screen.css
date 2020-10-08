@@ -96,6 +96,8 @@ section {
   font-weight: 700;
 }
 .qr-code img {
+  margin-left: auto;
+  height: 192px;
   filter: opacity(30%);
 }
 .qr-code p {
