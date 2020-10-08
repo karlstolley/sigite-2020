@@ -68,6 +68,12 @@ img {
 section {
   padding-bottom: 24px;
 }
+#supporting li {
+  padding-bottom: 12px;
+}
+#author ul {
+  list-style-type: none;
+}
 
 #footer img {
   filter: grayscale() opacity(50%);
@@ -126,7 +132,7 @@ section {
     padding-left: 0;
   }
   #poster > * {
-    padding: 24px;
+    padding: 12px 24px;
   }
   .qr-code {
     display: flex;
@@ -205,7 +211,7 @@ section {
     grid-gap: 24px;
   }
   .finding {
-    padding-top: 126px;
+    padding-top: 102px;
   }
 }
 
@@ -236,6 +242,9 @@ section {
   #footer {
     grid-column: 3 / 6;
     grid-row: 9 / 10;
+  }
+  #supporting li {
+    padding-bottom: 0;
   }
 }
 
