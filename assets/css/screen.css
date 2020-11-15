@@ -245,31 +245,25 @@ section {
 @media screen and (min-width: 1190px) {
   #poster {
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(12, min-content);
   }
   #header,
   #details {
     grid-column: 1 / 3;
-  }
-  #details {
-    grid-row: 2 / 8;
   }
   #header {
     grid-row: 1 / 2;
   }
   #main-finding {
     grid-column: 3 / 6;
-    grid-row: 2 / 9;
   }
   #supporting {
     display: block;
     grid-column: 6 / 8;
-    grid-row: 2 / 8;
-    padding-top: 42px;
+    grid-row: 3 / 4;
   }
   #footer {
     grid-column: 3 / 6;
-    grid-row: 9 / 10;
+    grid-row: 4 / 5;
   }
   #supporting li {
     padding-bottom: 0;
