@@ -237,7 +237,8 @@ section {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: min-content 30px repeat(3, min-content);
   }
-  #poster::after {
+  #poster::after,
+  #poster::before {
     content: "";
     grid-column: 3 / 6;
     grid-row: 1 / 2;
@@ -272,6 +273,8 @@ section {
 @media screen and (min-width: 1190px) {
   #poster {
     grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: min-content 30px repeat(2, auto);
+    min-height: 100vh;
   }
   #header,
   #details {
@@ -288,9 +291,14 @@ section {
     grid-column: 6 / 8;
     grid-row: 3 / 4;
   }
+  #poster::before,
   #footer {
     grid-column: 3 / 6;
     grid-row: 4 / 5;
+    align-self: end;
+  }
+  #poster::before {
+    align-self: auto;
   }
   #supporting li {
     padding-bottom: 0;
